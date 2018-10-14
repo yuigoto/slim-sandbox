@@ -1,0 +1,17 @@
+{
+  "path": [
+    "/api/v1",
+    "/api/v1/me"
+  ],
+  "passthrough": [
+    "/api/v1/auth",
+    "/api/v1/contact",
+    "/api/v1/contents",
+    "/api/v1/venues",
+    "/api/v1/location",
+    "/api/v1/healthcheck",
+    "/api/v1/recovery",
+    "/api/v1/register",
+    "/api/v1/mailing"
+  ]
+}

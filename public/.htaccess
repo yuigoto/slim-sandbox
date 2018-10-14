@@ -1,0 +1,15 @@
+# Slim Sandbox
+<IfModule mod_rewrite.c>
+  # Set Authorization headers
+  SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+  # Rewrite rules
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} ^(.*)
+  RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+  RewriteBase /
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.php [L]
+</IfModule>

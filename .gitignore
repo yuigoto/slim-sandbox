@@ -1,0 +1,6 @@
+# Folders
+data/
+vendor/
+
+# Files
+.env
