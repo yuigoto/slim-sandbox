@@ -1,5 +1,8 @@
 # Folders
+.idea/
+.vs/
 data/
+review/
 vendor/
 
 # Files
